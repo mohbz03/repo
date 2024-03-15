@@ -1,0 +1,188 @@
+/* display */
+/* visibility */
+/* opacity */
+/* position */
+/* z-index */ 
+/* float */
+/* clear */
+/* box-sizing: border-box pour debordement interne, padding, border */
+/* --------------------------------------------------
+display: flex|inline-flex
+flex-direction: row|column(-reverse)
+flex-wrap: nowrap|wrap|wrap-reverse  
+align-tems: hauteur
+justify-content: largeur
+order:  nombre (pour le réordonner)
+flex-grow: nombre (le rapport entre les éléments en cas de manque de place)
+flex-shrink: nombre (
+flex-basis: <int>
+align-self:  
+*/
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns:200px 1fr;
+    grid-template-rows: 100vh;
+    box-sizing: border-box;
+  }
+
+.item1{
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    background-image: linear-gradient(to bottom, #3c3b3b, #050505);
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+  }
+.liste li{
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 17px;
+    padding-left: 15px;
+    gap: 20px;
+    width: 170px;
+    height: 50px;
+    margin-left: 13px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+ul {
+    padding: 0;
+}
+.liste a{
+    margin-top: 10px;
+    vertical-align: top;
+    line-height: 0.8;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.y{
+    margin-left: 0px;
+}
+.sous-item{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 75% 10%;
+    box-sizing: border-box;
+}
+.devops{
+    border-bottom: 1px solid white;
+    width: 150px;
+    margin: 20px;
+    padding-left: 0px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.titre{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.boxic1{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+.log-out{
+    color: white;
+    background-color: #282727;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 17px;
+    padding-left: 15px;
+    gap: 20px;
+    padding-top: 15px;
+    width: 170px;
+    height: 50px;
+    margin-left: 13px;
+    border-radius: 10px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+.log-out:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); /* Inverse les couleurs au survol */
+  }
+
+.liste li:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); /* Inverse les couleurs au survol */
+}
+.liste a:hover{
+    color: rgb(0, 0, 0); /* Inverse les couleurs au survol */
+}
+.devops img{
+    width:  28px;
+    height:  29px;
+    margin-top:0; 
+}
+/*----------------------------------------------*/
+.item2{
+
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    background-image:url(wall.jpg) ;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    background-attachment: fixed;
+    overflow: auto; /* Ajoute une barre de défilement en cas de dépassement */
+    scrollbar-width: thin;
+}
+.modif-p{
+    font-style: normal; /* italic ; oblique */
+    /* font-variant: small-caps; */
+    font-weight: normal; /* bold ; bolder ; lighter */
+    font-size: medium; /*taille en em,px,%*/
+    line-height: normal; /* px,em,% */
+    font-family: Arial, sans-serif; /* serif, sans-serif, monospace, cursive, ... */
+    /* text-decoration: line-through rgb(255,159,90); */
+    text-transform: lowercase ;/*capitalize*/
+    text-align: justify;
+    text-indent: 20px;
+    text-overflow: clip; /* ellipsis */
+    letter-spacing: 0px;
+    white-space: normal;
+    word-spacing: 0px;
+    word-break: normal;
+    direction: ltr;
+    color: aliceblue;
+    margin: 20px;
+}
+.h11{
+    color: rgb(14, 172, 203);
+    text-shadow: 5px 3px 3px #0c0101;
+    text-align: center;
+}
+.h12{
+    color: rgb(14, 172, 203); 
+    text-shadow: 5px 3px 3px #0c0101;
+    text-align: center;
+    margin: 20px;
+}
+.img1{
+    width : 587px;
+    height: 330px;
+    margin: auto;
+}
+.cont{
+    width: 587px;
+    height: 330px;
+    margin: auto;
+    border: 5px dashed rgb(14, 203, 46);
+}
